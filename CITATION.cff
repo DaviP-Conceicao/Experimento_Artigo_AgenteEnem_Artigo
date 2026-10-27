@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Se usar este material, cite o artigo e este repositório."
+title: "Corretor de Redação ENEM: critérios do Inep no prompt (material do artigo)"
+authors:
+  - family-names: "Conceição"
+    given-names: "Davi Paulino"
+    affiliation: "Instituto Federal de Educação, Ciência e Tecnologia de São Paulo (IFSP), Câmpus São João da Boa Vista"
+    email: "davi.paulino@aluno.ifsp.edu.br"
+date-released: "2026-10-30"
+license: MIT
+language: pt-BR

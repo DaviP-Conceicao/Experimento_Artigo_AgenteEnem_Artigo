@@ -1,0 +1,11 @@
+nohup: ignorando entrada
+chamadas feitas: 0 -> final_A.jsonl
+chamadas feitas: 0 -> final_B.jsonl
+chamadas feitas: 0 -> final_A.jsonl
+chamadas feitas: 0 -> final_B.jsonl
+338 A sem_notas
+chamadas feitas: 1 -> final_A.jsonl
+680 B ok
+612 B sem_notas
+chamadas feitas: 2 -> final_B.jsonl
+TUDO CONCLUIDO

@@ -1,0 +1,11 @@
+1) QWK: maior diferença |próprio − sklearn(labels explícitos)| em 36 combinações x 6 alvos = 2.22e-16
+   sklearn SEM labels vs COM labels (maior diferença): ('B', 1, 'Total', -0.0047) | número de casos com diferença > 0.001: 6 de 36
+2) A: status nas linhas do .jsonl {'sem_notas': 8, 'ok': 252, 'soma_diferente': 45, 'ERRO': 3} | status nos 3 logs {'sem_notas': 8, 'ok': 252, 'soma_diferente': 45, 'ERRO': 3} | iguais: True
+2) B: status nas linhas do .jsonl {'ok': 248, 'soma_diferente': 49, 'sem_notas': 8} | status nos 3 logs {'ok': 248, 'soma_diferente': 49, 'sem_notas': 8} | iguais: True
+3) 499 A rep1: cru [120, 40, 80, 80, 0] soma 320 | matriz [120.0, 40.0, 80.0, 80.0, 0.0] soma 320.0
+3) 499 A rep2: cru [120, 40, 40, 80, 0] soma 280 | matriz [120.0, 40.0, 40.0, 80.0, 0.0] soma 280.0
+3) 499 A rep3: cru [120, 40, 40, 80, 0] soma 280 | matriz [120.0, 40.0, 40.0, 80.0, 0.0] soma 280.0
+3) 499 B rep1: cru [120, 40, 40, 80, 0] soma 280 | matriz [120.0, 40.0, 40.0, 80.0, 0.0] soma 280.0
+3) 499 B rep2: cru [120, 40, 40, 80, 0] soma 280 | matriz [120.0, 40.0, 40.0, 80.0, 0.0] soma 280.0
+3) 499 B rep3: cru [120, 40, 40, 80, 0] soma 280 | matriz [120.0, 40.0, 40.0, 80.0, 0.0] soma 280.0
+4) leitura independente por regex em 80 respostas sorteadas: 0 divergências

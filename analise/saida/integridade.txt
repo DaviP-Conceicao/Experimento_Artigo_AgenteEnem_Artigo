@@ -1,0 +1,26 @@
+===== Condição A: 308 linhas, 300 chaves (id, rep)
+  redações distintas: 100 | repetições: [1, 2, 3]
+  registros de falha da API (erro): 3
+  temperaturas: {'padrao'} | modelos retornados: Counter({'gemini-3.5-flash-lite': 305, None: 3})
+  tentativas por chave: Counter({1: 292, 2: 8})
+  de 2026-10-17T22:41:38+00:00 a 2026-10-18T12:52:17+00:00
+  rep 1: n=100 {'ok': 84, 'soma_diferente': 15, 'sem_notas': 1}
+  rep 2: n=100 {'ok': 88, 'soma_diferente': 11, 'sem_notas': 1}
+  rep 3: n=100 {'ok': 80, 'soma_diferente': 19, 'sem_notas': 1}
+  total das 300 chaves: {'ok': 252, 'soma_diferente': 45, 'sem_notas': 3}
+  chaves sem nota válida (id, rep), humano, status: [(('338', 1), 320, 'sem_notas'), (('338', 2), 320, 'sem_notas'), (('338', 3), 320, 'sem_notas')]
+  linhas por dia (UTC): {'2026-10-17': 200, '2026-10-18': 108}
+  tokens médios por chamada: entrada 4201 saída 1230 | total entrada 1281403 saída 375005
+===== Condição B: 305 linhas, 300 chaves (id, rep)
+  redações distintas: 100 | repetições: [1, 2, 3]
+  registros de falha da API (erro): 0
+  temperaturas: {'padrao'} | modelos retornados: Counter({'gemini-3.5-flash-lite': 305})
+  tentativas por chave: Counter({1: 295, 2: 5})
+  de 2026-10-17T23:02:43+00:00 a 2026-10-18T12:52:40+00:00
+  rep 1: n=100 {'ok': 86, 'soma_diferente': 13, 'sem_notas': 1}
+  rep 2: n=100 {'ok': 81, 'soma_diferente': 18, 'sem_notas': 1}
+  rep 3: n=100 {'ok': 81, 'soma_diferente': 18, 'sem_notas': 1}
+  total das 300 chaves: {'ok': 248, 'soma_diferente': 49, 'sem_notas': 3}
+  chaves sem nota válida (id, rep), humano, status: [(('612', 1), 600, 'sem_notas'), (('612', 2), 600, 'sem_notas'), (('612', 3), 600, 'sem_notas')]
+  linhas por dia (UTC): {'2026-10-17': 186, '2026-10-18': 119}
+  tokens médios por chamada: entrada 5371 saída 1235 | total entrada 1638186 saída 376572

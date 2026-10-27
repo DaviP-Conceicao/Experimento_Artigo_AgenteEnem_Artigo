@@ -1,0 +1,53 @@
+redações no conjunto pareado: 98
+
+== desvio-padrão da nota total
+humano 189.0
+A: por repetição [np.float64(142.1), np.float64(148.7), np.float64(149.6)] | média dos 3 desvios 146.8 | desvio da média das repetições 142.8
+B: por repetição [np.float64(141.8), np.float64(152.4), np.float64(144.3)] | média dos 3 desvios 146.2 | desvio da média das repetições 142.6
+
+== C5 nível 200
+humano: 13 de 98 redações (13.3%)
+A: 3 de 294 respostas (1.0%) | redações com média 200: 0 | C5 = 0 nas 3 repetições: 11 redações
+B: 1 de 294 respostas (0.3%) | redações com média 200: 0 | C5 = 0 nas 3 repetições: 15 redações
+
+== viés da C5 (agente − humano, média das 3 repetições) por nível humano da C5
+A C5 humano   0: n= 9 viés +19.3
+A C5 humano  40: n= 6 viés +33.3
+A C5 humano  80: n=20 viés -28.0
+A C5 humano 120: n=32 viés -24.2
+A C5 humano 160: n=18 viés -56.3
+A C5 humano 200: n=13 viés -116.9
+A C5 humano 0 ou 40: n=15 viés +24.9
+B C5 humano   0: n= 9 viés +13.3
+B C5 humano  40: n= 6 viés +33.3
+B C5 humano  80: n=20 viés -26.7
+B C5 humano 120: n=32 viés -27.9
+B C5 humano 160: n=18 viés -58.5
+B C5 humano 200: n=13 viés -124.1
+B C5 humano 0 ou 40: n=15 viés +21.3
+
+== 10 maiores divergências de cada condição (|média das 3 repetições do total − humano|)
+A: ['445', '192', '390', '143', '26', '48', '412', '102', '54', '603']
+B: ['445', '192', '127', '390', '54', '102', '412', '143', '26', '48']
+união: 11 redações ['445', '192', '390', '143', '26', '48', '412', '102', '54', '603', '127']
+todas subestimam em A e B: True
+
+id | palavras | humano | A | B | C5 humano | C5 A | C5 B | competência de maior diferença (A / B)
+445 | 378 | 960 | 467 | 467 | 200 | 0 | 13 | ['C5'] / ['C5']
+192 | 467 | 800 | 373 | 360 | 200 | 40 | 40 | ['C5'] / ['C5']
+390 | 210 | 760 | 360 | 360 | 200 | 40 | 40 | ['C5'] / ['C5']
+143 | 451 | 720 | 387 | 387 | 200 | 53 | 67 | ['C5'] / ['C5']
+26 | 225 | 680 | 347 | 360 | 160 | 27 | 40 | ['C5'] / ['C5']
+48 | 261 | 920 | 587 | 600 | 200 | 120 | 120 | ['C2', 'C4', 'C5'] / ['C2', 'C4', 'C5']
+412 | 241 | 800 | 480 | 453 | 160 | 13 | 0 | ['C5'] / ['C5']
+102 | 379 | 1000 | 693 | 640 | 200 | 67 | 40 | ['C5'] / ['C5']
+54 | 237 | 800 | 493 | 413 | 200 | 80 | 53 | ['C5'] / ['C5']
+603 | 402 | 760 | 453 | 467 | 200 | 80 | 80 | ['C5'] / ['C5']
+127 | 324 | 920 | 707 | 507 | 200 | 80 | 0 | ['C5'] / ['C5']
+C5 é a única competência de maior diferença (A e B) em 10 de 11; demais: ['48']
+
+== redações com nota humana total zero no conjunto pareado
+66: A [360, 200, 200] | B [200, 240, 280]
+680: A [280, 240, 240] | B [240, 240, 240]
+
+== |r| mínimo com p < 0,05 (bilateral), n = 98: 0.199
